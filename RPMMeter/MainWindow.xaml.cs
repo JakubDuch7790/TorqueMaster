@@ -23,6 +23,8 @@ namespace RPMMeter
         public MainWindow()
         {
             InitializeComponent();
+
+
         }
     }
 }

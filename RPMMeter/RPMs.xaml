@@ -5,12 +5,17 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RPMMeter"
              mc:Ignorable="d" 
-             x:Name="RPMs"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <TextBlock Background="#FF0E0A0A" TextAlignment="Right" Text="RPMs * 100" Margin="497,341,203,73" FontSize="20" FontStyle="Italic"
+                   Foreground="#FF948484" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock.Effect>
+                <DropShadowEffect BlurRadius="20" Color="Salmon" ShadowDepth="3" />
+            </TextBlock.Effect>
+        </TextBlock>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,319,0,0"
                    FontSize="100" Height="80" Width="180" Background="#FF3E2020" 
-                   RenderTransformOrigin="0.5,0.5" Text="{Binding Path=Value}" TextAlignment="Justify" FontFamily="Agency FB" Foreground="Silver">
+                   RenderTransformOrigin="0.5,0.5" Text="{Binding Path=Value}" TextAlignment="Center" FontFamily="Agency FB" Foreground="Silver">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,7 +25,7 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <Slider Width="300" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20" Value="{Binding Path=Value}" />
+        <Slider Width="300" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20" Value="{Binding Path=Value}" Minimum="0" Maximum="170" />
         <Border HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="300" Width="600" BorderBrush="Purple" 
                 BorderThickness="2 2 2 0" CornerRadius="300 300 0 0"/>
         <Border HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="280" Width="560" BorderBrush="Silver" 

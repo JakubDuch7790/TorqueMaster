@@ -9,6 +9,9 @@ namespace RPMMeter
 {
     class RPMViewModel : INotifyPropertyChanged
     {
+        private int _angle;
+        private int _value;
+
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChange(string info)
         {
@@ -17,9 +20,12 @@ namespace RPMMeter
                 PropertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
+        public RPMViewModel()
+        {
+            Value = 0;
+            Angle = _angle;
+        }
 
-      
-        int _angle;
         public int Angle
         {
             get
@@ -32,7 +38,6 @@ namespace RPMMeter
                 NotifyPropertyChange("Angle");
             }
         }
-        int _value;
         public int Value
         {
             get
@@ -41,11 +46,11 @@ namespace RPMMeter
             }
             set
             {
-                if(value >=0 && value <= 9000)
+                if(value >=0 && value <= 180)
                 {
                     _value = value;
-                    Angle = value - 85;
-                    NotifyPropertyChange("Angle");
+                    Angle = value - 88;
+                    NotifyPropertyChange("Value");
                 }
             }
         }
