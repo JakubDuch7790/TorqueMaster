@@ -6,21 +6,46 @@ using System.Threading.Tasks;
 
 namespace RPMMeter
 {
-    internal abstract class StartEngine
+    internal class Engine
     {
+        private bool _isRunning = false;
         int _force;
-        public void GetInitialForce()
-        {
+        public int _initialRpm = 1200;
 
+        private bool StartEngine()
+        {
+            GetInitialForce();
+            GetInitialTorque();
+            GetInitialRpm();
+            return _isRunning = true;
+        }
+
+
+        public int Force
+        {
+            get
+            {
+                return _force;
+            }
+            set
+            {
+                _force = value;
+            }
+        }
+
+        public int GetInitialForce()
+        {
+            Force = _initialRpm;
+            return Force;
         }
 
         public void GetInitialTorque() 
         {
 
         }
-        public void GetInitialRpm()
+        public int GetInitialRpm()
         {
-
+            return _initialRpm;
         }
     }
 }
