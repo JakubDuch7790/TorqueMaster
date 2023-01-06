@@ -15,11 +15,16 @@
         </Ellipse>
         <Ellipse Fill="Wheat" HorizontalAlignment="Center" VerticalAlignment="Center" Width="115" Height="115"/>
         <Ellipse Fill="Silver" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Height="75"/>
-        <Path Stroke="Black" StrokeThickness="15">
+        <!--<Path Stroke="Black" StrokeThickness="15">
             <Path.Data>
-                <LineGeometry StartPoint="180, 125" EndPoint="220, 125"/>
+                <LineGeometry StartPoint="180, 125" EndPoint="220, 125">
+                   
+                </LineGeometry>
+                
             </Path.Data>
-        </Path>
+        </Path>-->
+        <Line Name="KeyHole" Height="18" Width="40" Stroke="Red" X1="180" Y1="125" X2="220" Y2="125"/>
+
         <TextBlock FontSize="12" Width="10" Background="Transparent" Margin="143,119,247,117" Text="0" TextAlignment="Center">
             <TextBlock.RenderTransform>
                 <RotateTransform Angle="90"/>
@@ -47,11 +52,6 @@
         <Button x:Name="StartEngineBtn" Height="20" Click="StartEngineBtn_Click"
                 Margin="158,220,173,10" >
             <TextBlock TextWrapping="Wrap" Text="Start Engine" Width="79" />
-
         </Button>
-
-
-
-
     </Grid>
 </UserControl>

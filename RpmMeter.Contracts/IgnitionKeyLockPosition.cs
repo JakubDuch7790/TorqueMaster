@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace RpmMeter.Contracts
 {
-    internal class IgnitionKeyLockPosition
+    public class IgnitionKeyLockPosition
     {
-        public int PositionZero;
-        public int PositionI;
-        public int PositionII;
-        public int PositionIII;
 
-        Dictionary<int, int> PositionAnglePair = new Dictionary<int, int>();
-
-
+        public enum IgnitionKeyLockPositions
+        {
+            PositionZero = 180,
+            PositionI = 45,
+            PositionII = 75,
+            PositionIII = 90
+        }
 
     }
 }

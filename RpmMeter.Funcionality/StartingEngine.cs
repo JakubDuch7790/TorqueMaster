@@ -9,6 +9,7 @@ namespace RpmMeter.Funcionality
             //GetInitialForce();
             //GetInitialTorque();
             //GetInitialRpm();
+
             return _isRunning = true;
         }
 

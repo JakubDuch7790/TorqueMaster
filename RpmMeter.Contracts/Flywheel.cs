@@ -15,9 +15,10 @@ namespace RpmMeter.Contracts
         public int Rpm;
 
 
-    
-            
 
-        }
+
+
+
+
     }
 }
