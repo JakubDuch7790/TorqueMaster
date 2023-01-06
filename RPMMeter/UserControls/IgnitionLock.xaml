@@ -40,6 +40,9 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
+        <TextBlock FontSize="12" Width="10" Background="Transparent" Margin="195,50,195,186" Text="III" TextAlignment="Center">
+            
+        </TextBlock>
 
         <Button x:Name="StartEngineBtn" Height="20" Click="StartEngineBtn_Click"
                 Margin="158,220,173,10" >

@@ -13,6 +13,9 @@ namespace RpmMeter.Contracts
         public int PositionII;
         public int PositionIII;
 
+        Dictionary<int, int> PositionAnglePair = new Dictionary<int, int>();
+
+
 
     }
 }
