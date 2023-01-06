@@ -4,20 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RPMMeter
+namespace RpmMeter.Contracts
 {
-    internal class Engine
+    public abstract class Engine
     {
-        private bool _isRunning = false;
+        private int cylindersInEngine;
+        public bool _isRunning = false;
         int _force;
-        public int _initialRpm = 1200;
+        public const int _initialRpm = 1200;
+        public int Rpm;
 
         private bool StartEngine()
         {
-            GetInitialForce();
-            GetInitialTorque();
-            GetInitialRpm();
+            //GetInitialForce();
+            //GetInitialTorque();
+            //GetInitialRpm();
             return _isRunning = true;
+        }
+
+        public int Cylinders
+        {
+            get
+            {
+                return cylindersInEngine;
+            }
         }
 
 

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace RPMMeter.UserControls
 {
     /// <summary>
-    /// Interaction logic for Throttle.xaml
+    /// Interaction logic for IgnitionLock.xaml
     /// </summary>
-    public partial class Throttle : UserControl
+    public partial class IgnitionLock : UserControl
     {
-        public Throttle()
+        public IgnitionLock()
         {
             InitializeComponent();
         }
