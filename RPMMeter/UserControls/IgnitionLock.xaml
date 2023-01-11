@@ -7,6 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="250" d:DesignWidth="400"
              >
+    
+
     <Grid>
         <Border x:Name="IgnitionKeyLock" Height="250" Width="400" 
                 CornerRadius="15" Background="Black" AllowDrop="True"/>
@@ -23,7 +25,13 @@
                 
             </Path.Data>
         </Path>-->
-        <Line Name="KeyHole" Height="18" Width="40" Stroke="Red" X1="180" Y1="125" X2="220" Y2="125"/>
+        <Line Name="KeyHole" Stroke="Black" X1="180" Y1="125" X2="220" Y2="125" StrokeThickness="15">
+            <Line.RenderTransform>
+                <RotateTransform x:Name="unknown" Angle="{Binding Angle, UpdateSourceTrigger=PropertyChanged}"/>
+            </Line.RenderTransform>
+
+        </Line>
+        
 
         <TextBlock FontSize="12" Width="10" Background="Transparent" Margin="143,119,247,117" Text="0" TextAlignment="Center">
             <TextBlock.RenderTransform>
@@ -49,9 +57,8 @@
             
         </TextBlock>
 
-        <Button x:Name="StartEngineBtn" Height="20" Click="StartEngineBtn_Click"
+        <Button x:Name="StartEngineBtn" Height="20" Content="Start Engine" Click="StartEngineBtn_Click"
                 Margin="158,220,173,10" >
-            <TextBlock TextWrapping="Wrap" Text="Start Engine" Width="79" />
         </Button>
     </Grid>
 </UserControl>

@@ -12,7 +12,7 @@ namespace RpmMeter.Domain
     public class IgnitionLockMovement
     {
 
-        public int RotateKeyLockPosition0()
+        public static int RotateKeyLockPosition0()
         {
             
             int angle = (int)IgnitionKeyLockPositions.PositionZero;

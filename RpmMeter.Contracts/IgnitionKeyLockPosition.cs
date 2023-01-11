@@ -8,6 +8,7 @@ namespace RpmMeter.Contracts
 {
     public class IgnitionKeyLockPosition
     {
+        int currentPosition;
 
         public enum IgnitionKeyLockPositions
         {
@@ -15,6 +16,11 @@ namespace RpmMeter.Contracts
             PositionI = 45,
             PositionII = 75,
             PositionIII = 90
+        }
+
+        public IgnitionKeyLockPosition()
+        {
+           // while(!_isRunning)
         }
 
     }

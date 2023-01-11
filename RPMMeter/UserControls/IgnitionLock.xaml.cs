@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using RpmMeter.Funcionality;
 
 
 namespace RPMMeter.UserControls
@@ -25,11 +24,16 @@ namespace RPMMeter.UserControls
         public IgnitionLock()
         {
             InitializeComponent();
+            this.DataContext = new IgnitionKeyLockViewModel();
         }
 
         private void StartEngineBtn_Click(object sender, RoutedEventArgs e)
         {
-            StartEngine();
+        }
+
+        private void sss_Changed(object sender, EventArgs e)
+        {
+
         }
     }
 }
