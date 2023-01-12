@@ -17,7 +17,7 @@ namespace RPMMeter.UserControls
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        private void OnPropertyChange([CallerMemberName]string propertyName = null) =>
+        private void OnPropertyChange([CallerMemberName]string propertyName =  null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         public IgnitionKeyLockViewModel()

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPMMeter", "RPMMeter.csproj", "{28ED979D-CDA0-432A-A726-886F1B4FB338}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter", "RpmMeter.csproj", "{28ED979D-CDA0-432A-A726-886F1B4FB338}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Contracts", "..\RpmMeter.Contracts\RpmMeter.Contracts.csproj", "{1674FDE1-6AD4-4CAF-B5B0-C58485F56EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpmMeter.Domain", "..\RpmMeter.Funcionality\RpmMeter.Domain.csproj", "{464BE879-8061-46FF-8CFC-17EBD6115845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Domain", "..\RpmMeter.Funcionality\RpmMeter.Domain.csproj", "{464BE879-8061-46FF-8CFC-17EBD6115845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
