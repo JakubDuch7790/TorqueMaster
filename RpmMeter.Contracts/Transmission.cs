@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using static RpmMeter.Contracts.PetrolEngine;
 
-namespace RpmMeter.Contracts;
-
-public class Cylinder
+namespace RpmMeter.Contracts
 {
-    private int volumeInCubicCentimetres;
-    public decimal force;
+    public class Transmission
+    {
+        public bool IsInNeutral;
+        public int currentGear;
 
-
+    }
 }

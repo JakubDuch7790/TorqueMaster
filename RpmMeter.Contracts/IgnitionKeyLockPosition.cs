@@ -18,10 +18,7 @@ namespace RpmMeter.Contracts
             PositionIII = 90
         }
 
-        public IgnitionKeyLockPosition()
-        {
-           // while(!_isRunning)
-        }
+       
 
     }
 }

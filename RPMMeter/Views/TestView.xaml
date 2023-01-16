@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RpmMeter.Views"
+        xmlns:local="clr-namespace:RpmMeter.Views" xmlns:viewmodels="clr-namespace:RpmMeter.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:TestViewModel}"
         mc:Ignorable="d" FontSize="18"
         Title="TestView" Height="450" Width="800">
     <Grid>

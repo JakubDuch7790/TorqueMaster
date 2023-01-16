@@ -2,7 +2,7 @@
 
 namespace RpmMeter.Funcionality
 {
-    public class StartingEngine : Engine
+    public class StartingEngine : PetrolEngine
     {
         private bool StartEngine()
         {
@@ -10,14 +10,14 @@ namespace RpmMeter.Funcionality
             //GetInitialTorque();
             //GetInitialRpm();
 
-            return _isRunning = true;
+            return isRunning = true;
         }
 
         public void EngineRun()
         {
-            while(_isRunning)
+            while(isRunning)
             {
-                Rpm = _initialRpm;
+                Rpm = idleRpm;
             }
         }
     }
