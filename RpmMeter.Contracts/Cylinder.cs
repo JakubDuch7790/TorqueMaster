@@ -9,8 +9,32 @@ namespace RpmMeter.Contracts;
 
 public class Cylinder
 {
+    private decimal force;
     private int volumeInCubicCentimetres;
-    public decimal force;
 
+    public int VolumeInCubicCentimetres
+    {
+        get
+        {
+            return volumeInCubicCentimetres;
+        }
+        private set 
+        {
+            volumeInCubicCentimetres = value;
+        }
+    }
+
+    public decimal Force
+    {
+        get 
+        {
+            return force;
+        }
+
+        private set
+        {
+            force = value;
+        }
+    }
 
 }

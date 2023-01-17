@@ -4,10 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RpmMeter.Contracts
+namespace RpmMeter.Contracts;
+
+public class Valve
 {
-    internal class Valve
+    private decimal position;
+
+    public decimal Position
     {
-        public decimal position;
+        get
+        {
+            return position;
+        }
+        set
+        {
+            position = value;
+        }
     }
+
 }

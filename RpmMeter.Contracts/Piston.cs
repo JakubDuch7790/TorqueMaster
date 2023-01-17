@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace RpmMeter.Contracts
 {
-    internal class Piston
+    public class Piston
     {
-        public decimal position;
+        private decimal position;
+
+        public decimal Position
+        {
+            get
+            {
+                return position;
+            }
+
+            set
+            {
+                position = value;
+            }
+        }
     }
 }

@@ -19,15 +19,68 @@ public class PetrolEngine
     public const int maxRpmBeforeDownshift = 2500;
     public const int minRpmBeforeDownshift = 1250;
 
-    public int Rpm;
-    public bool isRunning;
-    public bool isGasPedalPressed;
-    public decimal torque;
+    private int rpm;
+    private bool isRunning;
+    private bool isGasPedalPressed;
+    private decimal torque;
     public decimal aggregatedForce;
 
+    public int Rpm
+    {
+        get
+        {
+            return rpm;
+        }
+        set
+        {
+            rpm = value;
+        }
+    }
+
+    public decimal Torque
+    {
+        get
+        {
+            return torque;
+        }
+        set
+        {
+            torque = value;
+        }
+
+    }
+
+    public bool IsRunning
+    {
+        get
+        {
+            return isRunning;
+        }
+
+        set
+        {
+            isRunning = value;
+        }
+    }
+
+    public bool IsGasPedalPressed
+    {
+        get
+        {
+            return isGasPedalPressed;
+        }
+
+        set
+        {
+            isRunning = value;
+        }
+    }
 
 
 
 
-   
+
+
+
+
 }

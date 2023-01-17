@@ -7,12 +7,12 @@ public class PetrolEngineService : PetrolEngine
 {
     public bool StartEngine()
     {
-        return isRunning = true;
+        return IsRunning = true;
     }
 
     public void SetIdleRpm()
     {
-        while(isRunning)
+        while(IsRunning)
         {
             Rpm = idleRpm;
         }
@@ -20,16 +20,16 @@ public class PetrolEngineService : PetrolEngine
 
     public bool PressedGasPedal()
     {
-        return isGasPedalPressed = true;
+        return IsGasPedalPressed = true;
     }
 
 
     public PetrolEngineService()
     {
-        isRunning = false;
-        isGasPedalPressed= false;
+        IsRunning = false;
+        IsGasPedalPressed = false;
         Rpm = 0;
-        torque = 0;
+        Torque = 0;
         //aggregatedForce = force * numberofcylinders;
     }
 }

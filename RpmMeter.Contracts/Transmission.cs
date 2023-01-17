@@ -9,8 +9,34 @@ namespace RpmMeter.Contracts
 {
     public class Transmission
     {
-        public bool IsInNeutral;
-        public int currentGear;
+        private bool isInNeutral;
+        private int currentGear;
+
+        public bool IsInNeutral
+        {
+            get
+            {
+                return isInNeutral;
+            }
+
+            set
+            { 
+                isInNeutral = value;
+            }
+        }
+
+        public int CurrentGear
+        {
+            get
+            {
+                return currentGear;
+            }
+
+            set
+            {
+                currentGear = value;
+            }
+        }
 
     }
 }

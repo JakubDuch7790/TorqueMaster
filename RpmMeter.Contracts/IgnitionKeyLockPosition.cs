@@ -18,6 +18,18 @@ namespace RpmMeter.Contracts
             PositionIII = 90
         }
 
+        public int CurrentPosition
+        {
+            get 
+            {
+                return currentPosition; 
+            }
+            set
+            {
+                currentPosition = value;
+            }
+        }
+
        
 
     }

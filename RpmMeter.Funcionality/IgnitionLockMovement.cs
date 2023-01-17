@@ -7,35 +7,34 @@ using RpmMeter;
 using RpmMeter.Contracts;
 using static RpmMeter.Contracts.IgnitionKeyLockPosition;
 
-namespace RpmMeter.Domain
+namespace RpmMeter.Domain;
+
+public class IgnitionLockMovement
 {
-    public class IgnitionLockMovement
+
+    public static int RotateKeyLockPosition0()
+    {
+        
+        int angle = (int)IgnitionKeyLockPositions.PositionZero;
+        return angle;
+    }
+
+    public int RotateKeyLockPosition1()
     {
 
-        public static int RotateKeyLockPosition0()
-        {
-            
-            int angle = (int)IgnitionKeyLockPositions.PositionZero;
-            return angle;
-        }
-
-        public int RotateKeyLockPosition1()
-        {
-
-            int angle = (int)IgnitionKeyLockPositions.PositionI;
-            return angle;
-        }
-
-        public int RotateKeyLockPosition2()
-        { 
-            int angle = (int)IgnitionKeyLockPositions.PositionII;
-            return angle;
-        }
-
-        public int RotateKeyLockPosition3()
-        {
-        int angle = (int)IgnitionKeyLockPositions.PositionIII;
+        int angle = (int)IgnitionKeyLockPositions.PositionI;
         return angle;
-        }
+    }
+
+    public int RotateKeyLockPosition2()
+    { 
+        int angle = (int)IgnitionKeyLockPositions.PositionII;
+        return angle;
+    }
+
+    public int RotateKeyLockPosition3()
+    {
+    int angle = (int)IgnitionKeyLockPositions.PositionIII;
+    return angle;
     }
 }
