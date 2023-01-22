@@ -3,7 +3,7 @@ using static RpmMeter.Contracts.PetrolEngine;
 
 namespace RpmMeter.Funcionality;
 
-public class PetrolEngineService : PetrolEngine
+public class PetrolEngineService : IPetrolEngineService
 {
     public bool StartEngine()
     {
