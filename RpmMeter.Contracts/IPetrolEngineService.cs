@@ -10,9 +10,13 @@ public interface IPetrolEngineService
 {
     void StartEngine(PetrolEngine petrolEngine);
 
+    void TurnOffEngine(PetrolEngine petrolEngine);
+
     void SetIdleRpm(PetrolEngine petrolEngine);
 
-    bool PressedGasPedal(PetrolEngine petrolEngine);
+    bool PressGasPedal(PetrolEngine petrolEngine);
+
+    bool ReleaseGasPedal(PetrolEngine petrolEngine);
 
     decimal CalculateTorque(PetrolEngine petrolEngine);
 
