@@ -1,35 +1,36 @@
 ﻿using RpmMeter.Contracts;
-using static RpmMeter.Contracts.PetrolEngine;
 
 namespace RpmMeter.Funcionality;
 
 public class PetrolEngineService : IPetrolEngineService
 {
-    public bool StartEngine()
+    public decimal CalculateAggregatedForce(PetrolEngine petrolEngine)
     {
-        return IsRunning = true;
+        throw new NotImplementedException();
     }
 
-    public void SetIdleRpm()
+    public int CalculateRpm(PetrolEngine petrolEngine)
     {
-        while(IsRunning)
-        {
-            Rpm = idleRpm;
-        }
+        throw new NotImplementedException();
     }
 
-    public bool PressedGasPedal()
+    public decimal CalculateTorque(PetrolEngine petrolEngine)
     {
-        return IsGasPedalPressed = true;
+        throw new NotImplementedException();
     }
 
-
-    public PetrolEngineService()
+    public bool PressedGasPedal(PetrolEngine petrolEngine)
     {
-        IsRunning = false;
-        IsGasPedalPressed = false;
-        Rpm = 0;
-        Torque = 0;
-        //aggregatedForce = force * numberofcylinders;
+        return petrolEngine.IsGasPedalPressed = true;
+    }
+
+    public void SetIdleRpm(PetrolEngine petrolEngine)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void StartEngine(PetrolEngine petrolEngine)
+    {
+        throw new NotImplementedException();
     }
 }

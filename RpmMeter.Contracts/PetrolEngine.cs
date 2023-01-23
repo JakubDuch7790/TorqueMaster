@@ -76,6 +76,16 @@ public class PetrolEngine
         }
     }
 
+    public PetrolEngine()
+    {
+        IsRunning = false;
+        IsGasPedalPressed = false;
+        Rpm = 0;
+        Torque = 0;
+        //aggregatedForce = 0;
+
+    }
+
 
 
 
