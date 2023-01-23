@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xunit;
 
-namespace Test;
+namespace RpmMeter.Contracts;
 
-
-
-
-
-
+public interface IGear
+{
+    int FollowingGear(Gear gear);
+}

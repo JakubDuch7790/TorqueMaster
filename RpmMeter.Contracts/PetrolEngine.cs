@@ -72,7 +72,7 @@ public class PetrolEngine
 
         set
         {
-            isRunning = value;
+            isGasPedalPressed = value;
         }
     }
 

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RpmMeter.Contracts
 {
-    public interface Interface1
+    public interface IIgnitionKeyLockPosition
     {
+        int RotateKeyLock(IgnitionKeyLockPosition keyLockPosition);
     }
 }

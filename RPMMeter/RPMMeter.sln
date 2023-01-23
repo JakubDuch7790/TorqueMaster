@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Contracts", "..\Rp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Domain", "..\RpmMeter.Funcionality\RpmMeter.Domain.csproj", "{464BE879-8061-46FF-8CFC-17EBD6115845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "..\Test\Test.csproj", "{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnconnectedMethodVisualTesting1", "..\UnconnectedMethodVisualTesting1\UnconnectedMethodVisualTesting1.csproj", "{618D6299-DAB0-4912-AF37-F497729D9358}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{618D6299-DAB0-4912-AF37-F497729D9358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618D6299-DAB0-4912-AF37-F497729D9358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618D6299-DAB0-4912-AF37-F497729D9358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618D6299-DAB0-4912-AF37-F497729D9358}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
