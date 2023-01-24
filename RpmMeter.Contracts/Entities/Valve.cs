@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RpmMeter.Contracts
+namespace RpmMeter.Contracts.Entities;
+
+public class Valve
 {
-    public interface ICylinder
-    {
-        decimal CalculateForce(Cylinder cylinder);
-    }
+    private decimal Position { get; set; }
+
+
 }

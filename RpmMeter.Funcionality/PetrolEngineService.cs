@@ -1,4 +1,5 @@
-﻿using RpmMeter.Contracts;
+﻿using RpmMeter.Contracts.Entities;
+using RpmMeter.Contracts.Services;
 
 namespace RpmMeter.Funcionality;
 
@@ -20,7 +21,7 @@ public class PetrolEngineService : IPetrolEngineService
     {
        while (petrolEngine.IsRunning && !petrolEngine.IsGasPedalPressed)
         {
-            petrolEngine.Rpm = Constants.idleRpm;
+            petrolEngine.Rpm = RpmConstants.idleRpm;
         }
     }
 

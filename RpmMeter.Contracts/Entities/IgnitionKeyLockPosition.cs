@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RpmMeter.Contracts
+namespace RpmMeter.Contracts.Entities
 {
     public class IgnitionKeyLockPosition
     {
@@ -20,9 +20,9 @@ namespace RpmMeter.Contracts
 
         public int CurrentPosition
         {
-            get 
+            get
             {
-                return currentPosition; 
+                return currentPosition;
             }
             set
             {
@@ -30,7 +30,7 @@ namespace RpmMeter.Contracts
             }
         }
 
-       
+
 
     }
 }

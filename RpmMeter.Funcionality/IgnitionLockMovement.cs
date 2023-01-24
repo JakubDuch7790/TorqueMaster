@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RpmMeter;
-using RpmMeter.Contracts;
-using static RpmMeter.Contracts.IgnitionKeyLockPosition;
+using static RpmMeter.Contracts.Entities.IgnitionKeyLockPosition;
 
 namespace RpmMeter.Domain;
 

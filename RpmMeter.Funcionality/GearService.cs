@@ -1,4 +1,5 @@
-﻿using RpmMeter.Contracts;
+﻿using RpmMeter.Contracts.Entities;
+using RpmMeter.Contracts.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
