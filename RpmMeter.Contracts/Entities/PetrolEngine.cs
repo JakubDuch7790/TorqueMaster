@@ -10,10 +10,10 @@ public class PetrolEngine
 {
 
 
-    private int Rpm { get; set; }
-    private bool IsRunning { get; set; }
-    private bool IsGasPedalPressed { get; set; }
-    private decimal Torque { get; set; }
+    public int Rpm { get; set; }
+    public bool IsRunning { get; set; }
+    public bool IsGasPedalPressed { get; set; }
+    public decimal Torque { get; set; }
     public decimal AggregatedForce { get; set; }
 
 

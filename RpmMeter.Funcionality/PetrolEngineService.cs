@@ -21,7 +21,7 @@ public class PetrolEngineService : IPetrolEngineService
     {
        while (petrolEngine.IsRunning && !petrolEngine.IsGasPedalPressed)
         {
-            petrolEngine.Rpm = RpmConstants.idleRpm;
+            petrolEngine.Rpm = RpmConstants.IdleRpm;
         }
     }
 

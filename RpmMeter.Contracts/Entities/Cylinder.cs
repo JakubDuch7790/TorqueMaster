@@ -9,9 +9,15 @@ namespace RpmMeter.Contracts.Entities;
 
 public class Cylinder
 {
+    public int numberOfCylinders = 0;
 
     public int VolumeInCubicCentimetres { get; set; }
     
     public decimal Force { get; set; }
+
+    public Cylinder()
+    {
+        numberOfCylinders++;
+    }
   
 }
