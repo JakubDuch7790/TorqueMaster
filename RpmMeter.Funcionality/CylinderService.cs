@@ -12,7 +12,9 @@ namespace RpmMeter.Domain
     {
         public decimal CalculateForce(Cylinder cylinder)
         {
-            throw new NotImplementedException();
+            cylinder.Force = cylinder.VolumeInCubicCentimetres * RpmConstants.Acceleration;
+
+            return cylinder.Force;
         }
     }
 }

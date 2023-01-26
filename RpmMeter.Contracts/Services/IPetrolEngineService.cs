@@ -21,7 +21,7 @@ public interface IPetrolEngineService
 
     int CalculateRpm(PetrolEngine petrolEngine);
 
-    decimal CalculateAggregatedForce(PetrolEngine petrolEngine);
+    decimal CalculateAggregatedForce(PetrolEngine petrolEngine, Cylinder cylinder);
 
 
 }

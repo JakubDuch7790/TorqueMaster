@@ -24,7 +24,7 @@ public class PetrolEngine
         IsGasPedalPressed = false;
         Rpm = 0;
         Torque = 0;
-        //aggregatedForce = 0;
+        AggregatedForce = 0;
 
     }
 
