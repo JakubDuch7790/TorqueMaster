@@ -17,7 +17,7 @@ public class PetrolEngineService : IPetrolEngineService
         return petrolEngine.IsGasPedalPressed = false;
     }
 
-    public void StartEngineAndSetIdleRpm(PetrolEngine petrolEngine)
+    public void StartEngine(PetrolEngine petrolEngine)
     {
         petrolEngine.IsRunning = true;
 
@@ -29,9 +29,9 @@ public class PetrolEngineService : IPetrolEngineService
         petrolEngine.IsRunning = false;
     }
 
-    public decimal CalculateAggregatedForce(PetrolEngine petrolEngine)
+    public decimal CalculateAggregatedForce(PetrolEngine petrolEngine, Cylinder cylinder)
     {
-        petrolEngine.AggregatedForce = Cylinder.Force * Cylinder.numberOfCylinders;
+        petrolEngine.AggregatedForce = cylinder.Force * Cylinder.numberOfCylinders;
 
         return petrolEngine.AggregatedForce;
         

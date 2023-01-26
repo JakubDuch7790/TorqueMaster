@@ -9,7 +9,7 @@ namespace RpmMeter.Contracts.Services;
 
 public interface IPetrolEngineService
 {
-    void StartEngineAndSetIdleRpm(PetrolEngine petrolEngine);
+    void StartEngine(PetrolEngine petrolEngine);
 
     void TurnOffEngine(PetrolEngine petrolEngine);
 
