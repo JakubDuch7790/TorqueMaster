@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RpmMeter.Contracts.Services;
 
 namespace RpmMeter.Contracts.Entities;
 
@@ -17,54 +16,44 @@ public class PetrolEngine : IEngine
     public decimal Torque { get; set; }
     public decimal AggregatedForce { get; set; }
 
+    public int numberOfCylinders { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-
-    public PetrolEngine()
+    public bool PressGasPedal(IEngine engine)
     {
-        IsRunning = false;
-        IsGasPedalPressed = false;
-        Rpm = 0;
-        Torque = 0;
-        AggregatedForce = 0;
+        return engine.IsGasPedalPressed = true;
     }
 
-    public bool PressGasPedal(PetrolEngine petrolEngine)
+    public bool ReleaseGasPedal(IEngine engine)
     {
-        return petrolEngine.IsGasPedalPressed = true;
+        return engine.IsGasPedalPressed = false;
     }
 
-    public bool ReleaseGasPedal(PetrolEngine petrolEngine)
+    public void StartEngine(IEngine engine)
     {
-        return petrolEngine.IsGasPedalPressed = false;
+        engine.IsRunning = true;
+
+        engine.Rpm = RpmConstants.IdleRpm;
     }
 
-    public void StartEngine(PetrolEngine petrolEngine)
+    public void TurnOffEngine(IEngine engine)
     {
-        petrolEngine.IsRunning = true;
-
-        petrolEngine.Rpm = RpmConstants.IdleRpm;
+        engine.IsRunning = false;
     }
 
-    public void TurnOffEngine(PetrolEngine petrolEngine)
+    public decimal CalculateAggregatedForce(IEngine engine, Cylinder cylinder)
     {
-        petrolEngine.IsRunning = false;
-    }
+        engine.AggregatedForce = cylinder.Force * numberOfCylinders;
 
-    public decimal CalculateAggregatedForce(PetrolEngine petrolEngine, Cylinder cylinder)
-    {
-        petrolEngine.AggregatedForce = cylinder.Force * Cylinder.numberOfCylinders;
-
-        return petrolEngine.AggregatedForce;
+        return  engine.AggregatedForce;
 
     }
 
-
-    public int CalculateRpm(PetrolEngine petrolEngine)
+    public decimal CalculateTorque(IEngine engine)
     {
         throw new NotImplementedException();
     }
 
-    public decimal CalculateTorque(PetrolEngine petrolEngine)
+    public int CalculateRpm(IEngine engine)
     {
         throw new NotImplementedException();
     }

@@ -27,7 +27,7 @@ public interface IEngine
 
     bool ReleaseGasPedal(IEngine engine);
 
-    decimal CalculateTorque(IEngine engine);
+    decimal CalculateTorque(IEngine engine, Gear gear);
 
     int CalculateRpm(IEngine engine);
 
