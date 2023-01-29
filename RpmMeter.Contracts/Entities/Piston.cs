@@ -8,7 +8,7 @@ namespace RpmMeter.Contracts.Entities
 {
     public class Piston
     {
-        private decimal Position { get; set; }
+        private int Position { get; set; }
 
     }
 }

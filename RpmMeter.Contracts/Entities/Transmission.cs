@@ -9,25 +9,21 @@ namespace RpmMeter.Contracts.Entities
 {
     public class Transmission
     {
+        public Gear NextGear { get; init; }
+        public Gear PreviousGear { get; init; }
 
         public bool IsInNeutral { get; set; } 
 
         public int CurrentGear { get; set; }
 
-        public struct GearRatios
-        {
-            public GearRatios()
-            {
-                double FirstGear = 3.308;
-                double SecondGear = 1.913;
-                double ThirdGear = 1.267;
-                double FourthGear = 0.927;
-                double FifthGear = 0.717;
+        public int UpshiftGear() => CurrentGear + 1;
 
-            }
+        public int DownshiftGear() => CurrentGear - 1;
 
-            
-        }
+        public bool ShiftIntoNeutral() => IsInNeutral = true;
+
+
+
 
     }
 }

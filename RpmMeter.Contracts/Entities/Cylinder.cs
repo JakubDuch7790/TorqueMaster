@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RpmMeter.Contracts.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,16 +10,15 @@ namespace RpmMeter.Contracts.Entities;
 
 public class Cylinder
 {
-    public static int numberOfCylinders = 0;
 
     public decimal VolumeInCubicCentimetres{ get; set; }
     
-    public decimal Force { get; set; }
-
-    public Cylinder()
+    public decimal Force
     {
-        VolumeInCubicCentimetres = 399.5M;
-        numberOfCylinders++;
+        get
+        {
+            return VolumeInCubicCentimetres * RpmConstants.Acceleration;
+        }
     }
   
 }
