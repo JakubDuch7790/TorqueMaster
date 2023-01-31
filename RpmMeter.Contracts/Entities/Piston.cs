@@ -10,5 +10,17 @@ namespace RpmMeter.Contracts.Entities
     {
         private int Position { get; set; }
 
+        public int MovePiston()
+        {
+            if (Position == 0)
+            {
+                Position++;
+                return Position;
+            }
+
+            Position--;
+            return Position;
+        }
+
     }
 }

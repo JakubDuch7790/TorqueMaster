@@ -20,5 +20,10 @@ public class Cylinder
             return VolumeInCubicCentimetres * RpmConstants.Acceleration;
         }
     }
+
+    public void GenerateForce()
+    {
+        return Force;
+    }
   
 }

@@ -9,14 +9,15 @@ namespace RpmMeter.Contracts.Entities;
 public class PetrolEngine : IEngine
 {
 
-
+    Transmission Transmission { get; set; } = new Transmission();
     public int Rpm { get; set; }
     public bool IsRunning { get; set; }
     public bool IsGasPedalPressed { get; set; }
     public decimal Torque { get; set; }
     public decimal AggregatedForce { get; set; }
 
-    public int numberOfCylinders { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public int NumberOfCylinders { get; set; }
+    public int Pressure { get; set; }
 
     public bool PressGasPedal(IEngine engine)
     {
@@ -33,11 +34,14 @@ public class PetrolEngine : IEngine
         engine.IsRunning = true;
 
         engine.Rpm = RpmConstants.IdleRpm;
+
+        Transmission.IsInNeutral = true;
     }
 
     public void TurnOffEngine(IEngine engine)
     {
         engine.IsRunning = false;
+        engine.Rpm = 0;
     }
 
     public decimal CalculateAggregatedForce(IEngine engine, Cylinder cylinder)
@@ -48,9 +52,9 @@ public class PetrolEngine : IEngine
 
     }
 
-    public decimal CalculateTorque(IEngine engine)
+    public decimal CalculateTorque(IEngine engine, Gear gear)
     {
-        throw new NotImplementedException();
+        return engine.AggregatedForce * (gear.GearRadius / 2);
     }
 
     public int CalculateRpm(IEngine engine)

@@ -15,7 +15,9 @@ public interface IEngine
     decimal Torque { get; set; }
     decimal AggregatedForce { get; set; }
 
-    int numberOfCylinders { get; set; }
+    int NumberOfCylinders { get; set; }
+
+    int Pressure { get; set; }
 
 
 
