@@ -21,19 +21,19 @@ public interface IEngine
 
 
 
-    void StartEngine(IEngine engine);
+    void StartEngine();
 
-    void TurnOffEngine(IEngine engine);
+    void TurnOffEngine();
 
-    bool PressGasPedal(IEngine engine);
+    bool PressGasPedal();
 
-    bool ReleaseGasPedal(IEngine engine);
+    bool ReleaseGasPedal();
 
-    decimal CalculateTorque(IEngine engine, Gear gear);
+    decimal CalculateTorque(Gear gear);
 
-    int CalculateRpm(IEngine engine);
+    int CalculateRpm();
 
-    decimal CalculateAggregatedForce(IEngine engine, Cylinder cylinder);
+    decimal CalculateAggregatedForce(Cylinder cylinder);
 
 
 }

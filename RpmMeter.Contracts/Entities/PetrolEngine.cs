@@ -19,42 +19,42 @@ public class PetrolEngine : IEngine
     public int NumberOfCylinders { get; set; }
     public int Pressure { get; set; }
 
-    public bool PressGasPedal(IEngine engine)
+    public bool PressGasPedal()
     {
-        return engine.IsGasPedalPressed = true;
+        return IsGasPedalPressed = true;
     }
 
-    public bool ReleaseGasPedal(IEngine engine)
+    public bool ReleaseGasPedal()
     {
-        return engine.IsGasPedalPressed = false;
+        return IsGasPedalPressed = false;
     }
 
-    public void StartEngine(IEngine engine)
+    public void StartEngine()
     {
-        engine.IsRunning = true;
+        IsRunning = true;
 
-        engine.Rpm = RpmConstants.IdleRpm;
+        Rpm = RpmConstants.IdleRpm;
 
         Transmission.IsInNeutral = true;
     }
 
-    public void TurnOffEngine(IEngine engine)
+    public void TurnOffEngine()
     {
-        engine.IsRunning = false;
-        engine.Rpm = 0;
+        IsRunning = false;
+        Rpm = 0;
     }
 
-    public decimal CalculateAggregatedForce(IEngine engine, Cylinder cylinder)
+    public decimal CalculateAggregatedForce(Cylinder cylinder)
     {
-        engine.AggregatedForce = cylinder.Force * numberOfCylinders;
+        AggregatedForce = cylinder.Force * NumberOfCylinders;
 
-        return  engine.AggregatedForce;
+        return  AggregatedForce;
 
     }
 
-    public decimal CalculateTorque(IEngine engine, Gear gear)
+    public decimal CalculateTorque(Gear gear)
     {
-        return engine.AggregatedForce * (gear.GearRadius / 2);
+        return AggregatedForce * (gear.GearRadius / 2);
     }
 
     public int CalculateRpm(IEngine engine)
