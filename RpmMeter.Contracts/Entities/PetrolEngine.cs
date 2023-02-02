@@ -57,8 +57,8 @@ public class PetrolEngine : IEngine
         return AggregatedForce * (gear.GearRadius / 2);
     }
 
-    public int CalculateRpm(IEngine engine)
+    public int CalculateRpm()
     {
-        throw new NotImplementedException();
+        return Rpm + 100;
     }
 }

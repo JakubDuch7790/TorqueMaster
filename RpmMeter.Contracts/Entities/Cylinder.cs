@@ -21,7 +21,7 @@ public class Cylinder
         }
     }
 
-    public void GenerateForce()
+    public decimal GenerateForce()
     {
         return Force;
     }
