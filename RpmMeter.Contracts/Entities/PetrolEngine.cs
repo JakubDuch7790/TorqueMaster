@@ -59,6 +59,6 @@ public class PetrolEngine : IEngine
 
     public int CalculateRpm()
     {
-        return Rpm + 100;
+        return Rpm + Transmission.CurrentGear.ShiftedGearRpmRise;
     }
 }
