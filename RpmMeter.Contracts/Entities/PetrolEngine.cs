@@ -11,6 +11,14 @@ public class PetrolEngine : IEngine
 
     Transmission Transmission { get; set; } = new Transmission();
     public int Rpm { get; set; }
+
+    public int TotalRpm
+    {
+        get
+        {
+            return Rpm + Transmission.CurrentGear.ShiftedGearRpmRise;
+        }
+    }
     public bool IsRunning { get; set; }
     public bool IsGasPedalPressed { get; set; }
     public decimal Torque { get; set; }
@@ -57,8 +65,4 @@ public class PetrolEngine : IEngine
         return AggregatedForce * (gear.GearRadius / 2);
     }
 
-    public int CalculateRpm()
-    {
-        return Rpm + Transmission.CurrentGear.ShiftedGearRpmRise;
-    }
 }

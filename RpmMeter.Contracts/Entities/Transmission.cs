@@ -9,21 +9,41 @@ namespace RpmMeter.Contracts.Entities
 {
     public class Transmission
     {
-        
-
-        public Gear NextGear { get; init; }
-        public Gear PreviousGear { get; init; }
-
         public bool IsInNeutral { get; set; } 
 
-        public Gear CurrentGear { get; set; }
+        public Gear? CurrentGear { get; set; }
 
-        //Tieto dve metody ma privadzaju ku otazke moze sa NextGear definovat v uz classe Gear resp moze mat Gear ref na propertu vlastneho typu?
-        public int UpshiftGear() => CurrentGear.N;
+        public Gear FirstGear { get; set; }
 
-        public int DownshiftGear() => CurrentGear.PreviousGear;
+        public Gear UpshiftGear() => CurrentGear.NextGear;
+        public Gear DownshiftGear() => CurrentGear.PreviousGear;
 
-        public bool ShiftIntoNeutral() => IsInNeutral = true;
+        //public bool ShiftIntoNeutral() => IsInNeutral = true
+        
+         public void ShiftIntoNeutral()
+         {
+            CurrentGear = null;
+
+            IsInNeutral = true;
+         }
+
+        public Gear Upshift()
+        {
+            if (CurrentGear == null)
+            {
+                return CurrentGear = FirstGear;
+            }
+
+            return CurrentGear.NextGear;
+        }
+
+        public Gear DownshiftGear()
+        {
+            return FirstGear;
+        }
+
+
+
 
 
 

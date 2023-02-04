@@ -10,6 +10,8 @@ public interface IEngine
 
 {
     int Rpm { get; set; }
+
+    int TotalRpm { get; }
     bool IsRunning { get; set; }
     bool IsGasPedalPressed { get; set; }
     decimal Torque { get; set; }
@@ -31,7 +33,6 @@ public interface IEngine
 
     decimal CalculateTorque(Gear gear);
 
-    int CalculateRpm();
 
     decimal CalculateAggregatedForce(Cylinder cylinder);
 
