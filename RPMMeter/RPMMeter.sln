@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Domain", "..\RpmMe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "..\Test\Test.csproj", "{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnconnectedMethodVisualTesting1", "..\UnconnectedMethodVisualTesting1\UnconnectedMethodVisualTesting1.csproj", "{618D6299-DAB0-4912-AF37-F497729D9358}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVisualTesting", "..\UnconnectedMethodVisualTesting1\ClassVisualTesting.csproj", "{618D6299-DAB0-4912-AF37-F497729D9358}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

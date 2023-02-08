@@ -10,6 +10,8 @@ public class Gear
     public Gear NextGear { get; init; }
     public Gear PreviousGear { get; init; }
 
+    public Gear FirstGear { get; set; }
+
 
     public decimal InputOutputShaftFirstGearRatio = 3.308M;
 

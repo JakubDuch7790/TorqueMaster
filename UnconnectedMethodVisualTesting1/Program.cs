@@ -1,24 +1,35 @@
-﻿namespace UnconnectedMethodVisualTesting1
+﻿using ClassVisualTesting;
+
+namespace ClassVisualTesting;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-            NextMultipleOf5(11);
 
-            int testingInt = 11 % 5;
-            Console.WriteLine(testingInt);
-        }
 
-        public static void NextMultipleOf5(int num)
-        {
-            int nextMultipleof5 = num + (5 - num % 5);
-            Console.WriteLine(nextMultipleof5);
-        }
+        Gear firstGear = new(1, 750);
+        Gear secondGear = new(2, 600);
+        Gear thirdGear = new(3, 500);
+        Gear fourthGear = new(4, 400);
+        Gear fifthGear = new(5, 350);
 
-        
+
+        Transmission gears = new Transmission();
+        gears.AddGeartoTransmission(fifthGear);
+        gears.AddGeartoTransmission(fourthGear);
+        gears.AddGeartoTransmission(thirdGear);
+        gears.AddGeartoTransmission(secondGear);
+        gears.AddGeartoTransmission(firstGear);
+
+        gears.PrintGearsInTransmission();
 
 
     }
+
+
+
+
+
+
 }

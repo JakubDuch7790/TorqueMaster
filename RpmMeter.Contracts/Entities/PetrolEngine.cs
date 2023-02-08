@@ -16,7 +16,7 @@ public class PetrolEngine : IEngine
     {
         get
         {
-            return Rpm + Transmission.CurrentGear.ShiftedGearRpmRise;
+            return Rpm + Transmission.CurrentGear!.ShiftedGearRpmRise;
         }
     }
     public bool IsRunning { get; set; }
@@ -29,6 +29,7 @@ public class PetrolEngine : IEngine
 
     public bool PressGasPedal()
     {
+        ApplyPressure();
         return IsGasPedalPressed = true;
     }
 
@@ -63,6 +64,11 @@ public class PetrolEngine : IEngine
     public decimal CalculateTorque(Gear gear)
     {
         return AggregatedForce * (gear.GearRadius / 2);
+    }
+
+    public int ApplyPressure()
+    {
+        return Pressure * 2;
     }
 
 }

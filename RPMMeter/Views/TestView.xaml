@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RpmMeter.Views" xmlns:viewmodels="clr-namespace:RpmMeter.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:TestViewModel}"
-        mc:Ignorable="d" FontSize="18"
+        mc:Ignorable="d" FontSize="18" Background="Black"
         Title="TestView" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -31,5 +31,7 @@
 
         <TextBlock Text="{Binding Path=TestingRpm, Mode=OneWay}" Grid.Row="1" Grid.Column="1"></TextBlock>
         <TextBox MinWidth="100" Grid.Row="2" Grid.Column="1" x:Name="TestingRpm"></TextBox>
+
+
     </Grid>
 </Window>

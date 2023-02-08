@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caliburn.Micro;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RPMMeter
 {
-    class RPMViewModel : INotifyPropertyChanged
+    class RPMViewModel : Screen
     {
         private int _angle;
         private int _value;
@@ -49,7 +50,7 @@ namespace RPMMeter
                 if(value >=0 && value <= 180)
                 {
                     _value = value;
-                    Angle = value - 88;
+                    Angle = value - 90;
                     NotifyPropertyChange("Value");
                 }
             }

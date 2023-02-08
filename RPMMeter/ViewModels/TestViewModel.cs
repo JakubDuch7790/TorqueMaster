@@ -9,7 +9,7 @@ namespace RpmMeter.ViewModels
 {
     public class TestViewModel : Screen
     {
-		private int _testingRpm = 1200;
+		private int _testingRpm = 1300;
         private int _testingSpeed;
 		private int _testingForce;
 
