@@ -22,9 +22,17 @@ internal class Program
         gears.AddGeartoTransmission(secondGear);
         gears.AddGeartoTransmission(firstGear);
 
-        gears.PrintGearsInTransmission();
 
+        LinkedList<Gear> gearsZwei = new();
 
+        gearsZwei.AddFirst(fifthGear);
+        gearsZwei.AddFirst(fourthGear);
+        gearsZwei.AddFirst(thirdGear);
+        gearsZwei.AddFirst(secondGear);
+        gearsZwei.AddFirst(firstGear);
+
+        Console.WriteLine(firstGear.ToString());
+        Console.WriteLine(fifthGear.ToString());
     }
 
 

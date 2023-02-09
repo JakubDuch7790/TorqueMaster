@@ -6,12 +6,8 @@ public class Gear
 
     public decimal GearRadius { get; set; }
     public int GearLabel { get; set; }
+    public bool NeutralGear { get; set; }
     public int ShiftedGearRpmRise { get; init; }
-    public Gear NextGear { get; init; }
-    public Gear PreviousGear { get; init; }
-
-    public Gear FirstGear { get; set; }
-
 
     public decimal InputOutputShaftFirstGearRatio = 3.308M;
 

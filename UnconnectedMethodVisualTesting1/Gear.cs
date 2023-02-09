@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassVisualTesting;
-public class Gear
+public class Gear 
 {
 
     private int myVar;
@@ -32,6 +32,16 @@ public class Gear
         GearLabel = gearLabel;
         ShiftedGearRpmRise = shiftedGearRpmRise;
 
+    }
+
+    public override string ToString()
+    {
+
+        if (GearLabel == 1)
+        {
+            return $"This is a {GearLabel}st gear";
+        }
+        return $"This is a {GearLabel}th gear";
     }
 }
 

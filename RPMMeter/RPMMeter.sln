@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Contracts", "..\Rp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpmMeter.Domain", "..\RpmMeter.Funcionality\RpmMeter.Domain.csproj", "{464BE879-8061-46FF-8CFC-17EBD6115845}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "..\Test\Test.csproj", "{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassVisualTesting", "..\UnconnectedMethodVisualTesting1\ClassVisualTesting.csproj", "{618D6299-DAB0-4912-AF37-F497729D9358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVisualTesting", "..\UnconnectedMethodVisualTesting1\ClassVisualTesting.csproj", "{618D6299-DAB0-4912-AF37-F497729D9358}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpmMeter.Contracts.Test", "..\RpmMeter.Contracts.Test1\RpmMeter.Contracts.Test.csproj", "{75996813-255B-4EE7-9AF0-BD29CE5EA456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{464BE879-8061-46FF-8CFC-17EBD6115845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{464BE879-8061-46FF-8CFC-17EBD6115845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{464BE879-8061-46FF-8CFC-17EBD6115845}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8764158-CC8E-4581-81B5-F2EFB1C6EFA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{618D6299-DAB0-4912-AF37-F497729D9358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{618D6299-DAB0-4912-AF37-F497729D9358}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{618D6299-DAB0-4912-AF37-F497729D9358}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{618D6299-DAB0-4912-AF37-F497729D9358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75996813-255B-4EE7-9AF0-BD29CE5EA456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75996813-255B-4EE7-9AF0-BD29CE5EA456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75996813-255B-4EE7-9AF0-BD29CE5EA456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75996813-255B-4EE7-9AF0-BD29CE5EA456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,8 +36,9 @@ public class Transmission
         }
     }
 
+    LinkedList<Gear> gearsZwei = new();
 
-
+    
 
 
 
