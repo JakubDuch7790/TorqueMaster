@@ -11,7 +11,7 @@ namespace RpmMeter.Contracts.Entities
     public class Transmission
     {
 
-        public LinkedList<Gear> Gears { get; set; }
+        public LinkedList<Gear> Gears { get; } = new LinkedList<Gear>();
 
         public bool IsInNeutral { get; set; } 
 
@@ -19,16 +19,25 @@ namespace RpmMeter.Contracts.Entities
 
         public void UpshiftGear()
         {
-            CurrentGear = Gears.ElementAt(CurrentGear!.GearLabel + 1);
+            if (CurrentGear.GearLabel < Gears.Count)
+            {
+                CurrentGear = Gears.ElementAt(CurrentGear!.GearLabel + 1);
+            }
+            CurrentGear = CurrentGear;
+
         }
         public void DownshiftGear()
         {
-            CurrentGear = Gears.ElementAt(CurrentGear!.GearLabel - 1);
+            if (CurrentGear.GearLabel > 0)
+            {
+                CurrentGear = Gears.ElementAt(CurrentGear!.GearLabel - 1);
+            }
+            CurrentGear = CurrentGear;
         }
 
         public void ShiftIntoNeutral()
          {
-            if(CurrentGear.GearLabel == 1)
+            if(CurrentGear.GearLabel == 1 && Gears != null)
             {
                 IsInNeutral = true;
                 DownshiftGear();

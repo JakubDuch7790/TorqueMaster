@@ -23,11 +23,16 @@ public class TransmissionTests
     {
         // Arrange
         Transmission transmission = new();
-        Gear firstGear = new Gear(1, 750);
-        Gear netralGear = new Gear(0, 0);
 
-        transmission.Gears.AddFirst(firstGear);
+        Gear firstGear = new Gear();
+        firstGear.GearLabel = 1;
+
+        Gear netralGear = new Gear();
+        netralGear.GearLabel = 0;
+
         transmission.Gears.AddFirst(netralGear);
+        transmission.Gears.AddLast(firstGear);
+
         transmission.CurrentGear = transmission.Gears.ElementAt(1);
         transmission.IsInNeutral = false;
 
